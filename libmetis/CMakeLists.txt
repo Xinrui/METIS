@@ -14,6 +14,10 @@ target_include_directories(metis PUBLIC
   $<INSTALL_INTERFACE:include>
 )
 
+target_compile_definitions(metis INTERFACE metis)
+
+add_library(metis::metis ALIAS metis)
+
 if(METIS_INSTALL)
   install(TARGETS metis
     LIBRARY DESTINATION lib

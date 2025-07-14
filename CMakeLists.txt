@@ -23,7 +23,7 @@ set(REALWIDTH 32 CACHE STRING "Width of real type (32 or 64)")
 
 configure_file(
   include/metis.h.in 
-  ${CMAKE_SOURCE_DIR}/include/metis.h 
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/metis.h 
   @ONLY
 )
 
