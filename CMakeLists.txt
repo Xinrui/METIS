@@ -46,5 +46,5 @@ configure_file(
 add_subdirectory(GKlib)
 
 # Recursively look for CMakeLists.txt in subdirs.
-add_subdirectory("libmetis")
+add_subdirectory(libmetis)
 # add_subdirectory("programs")
